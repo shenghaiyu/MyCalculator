@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff808080"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Calculate.AnotherActivity"
+    tools:showIn="@layout/activity_another">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="类型"></TextView>
+
+        <Spinner
+            android:id="@+id/SpinnerUnit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="值"></TextView>
+
+        <EditText
+            android:id="@+id/EditTextValue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/TextViewFrom"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="从"></TextView>
+
+        <Spinner
+            android:id="@+id/SpinnerFrom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/TextViewTo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="转换为"></TextView>
+
+        <Spinner
+            android:id="@+id/SpinnerTo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/TextViewString"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="结果为"></TextView>
+
+        <EditText
+            android:id="@+id/TextViewResult"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""></EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="转换"></Button>
+
+    <Button
+        android:id="@+id/buttonReturn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/bt_jump1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转" />
+</LinearLayout>
